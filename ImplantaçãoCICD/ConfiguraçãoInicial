@@ -1,0 +1,40 @@
+################################################################################################################################
+#Configuação de servidor para instalação do orquestrador (Jenkins)
+Pré-requisitos
+Requisitos mínimos de hardware:
+256MB de RAM
+1 GB de espaço em disco (embora 10 GB seja o mínimo recomendado se estiver executando o Jenkins como um contêiner do Docker)
+Configuração de hardware recomendada para uma equipe pequena:
+4 GB+ de RAM
+50 GB+ de espaço em disco
+
+A documentação oficial para configuração está no site do jenkings para instalação no sistema operacional Windons, Linux, Mac OS.
+https://www.jenkins.io/doc/book/installing/windows/
+
+#################################################################################################################################
+
+#Para ter acesso ao portal do jenkins já instalado. 
+
+Ao instalar um serviço para ser executado em uma conta de usuário de domínio, a conta deve ter o direito de fazer logon como um serviço. Essa permissão de logon se aplica estritamente ao computador local e deve ser concedida na Diretiva de Segurança Local.
+
+Execute as seguintes etapas abaixo para editar a política de segurança local do computador no qual deseja definir a permissão 'logon as a service':
+
+Faça logon no computador com privilégios administrativos.
+
+Abra as Ferramentas Administrativas e abra a Política de Segurança Local
+
+Se a Política de segurança local estiver ausente em seu sistema, consulte a resposta em Onde baixar o GPEdit.msc para Windows 10 Home? pergunta no Microsoft Community para solucionar problemas
+
+Expanda Política local e clique em Atribuição de direitos do usuário
+
+No painel direito, clique com o botão direito do mouse em Fazer logon como um serviço e selecione Propriedades.
+
+Clique no botão Adicionar usuário ou grupo… para adicionar o novo usuário.
+
+Na caixa de diálogo Selecionar usuários ou grupos , localize o usuário que deseja inserir e clique em OK
+
+Clique em OK nas Propriedades de logon como um serviço para salvar as alterações.
+
+Depois de concluir as etapas acima, tente fazer login novamente com o usuário adicionado.
+
+##################################################################################################################################
